@@ -23,13 +23,13 @@ The 'vnet.tf' file creates a virtual network  in Azure with a subnet or a set of
 The 'subnet.tf' file creates two subnet that one for the frontend, one for the backend.
 
 ## load-balancer.tf
-The load-balancer.tf file creates an Azure load balancer, a public IP address, and associated resources. The load balancer will be created in the specified resource group and location, and will be configured to use the specified public IP address. The code also defines two probes and two rules for the load balancer, on ports 80 and 443. The probes will be used to monitor the health of the backend instances, and the rules will define how traffic is distributed to the backend instances. This configuration will create the resources necessary to set up a load balancer in Azure, which can be used to distribute incoming traffic across multiple backend instances.
+The 'load-balancer.tf' file creates an Azure load balancer, a public IP address, and associated resources. The load balancer will be created in the specified resource group and location, and will be configured to use the specified public IP address. The code also defines two probes and two rules for the load balancer, on ports 80 and 443. The probes will be used to monitor the health of the backend instances, and the rules will define how traffic is distributed to the backend instances. This configuration will create the resources necessary to set up a load balancer in Azure, which can be used to distribute incoming traffic across multiple backend instances.
 
 ## storage-account.tf
 The 'storage-account.tf' file creates a storage account.
 
 ## backend.tf
-backend.tf file is used to store the state file in Azure Storage Account. The backend is used to store the state of Terraform's managed resources so that Terraform knows what has been created and what changes are necessary.
+'backend.tf' file is used to store the state file in Azure Storage Account. The backend is used to store the state of Terraform's managed resources so that Terraform knows what has been created and what changes are necessary.
 
 ## output.tf
 The outputs are the IDs of the frontend, backend, as well as the IP address of the frontend public IP. These outputs can be used to display or reference important information about the resources created by the Terraform configuration.
